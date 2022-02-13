@@ -6,7 +6,7 @@ var direction = Vector2(1.5,0)
 var wobble = 30.0
 
 
-var health = 1
+var health = 3
 
 var Effects = null
 onready var Bullet = load("res://Enemy/Bullet.tscn")
@@ -50,4 +50,5 @@ func _on_Timer_timeout():
 		bullet.rotation = d
 		bullet.global_position = global_position + Vector2(0,-40).rotated(d)
 		Effects.add_child(bullet)
+		
 	
