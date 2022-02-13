@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var small_speed = 3.0
-var initial_speed = 3.0
+var initial_speed = 3.5
 var health = 1
 
 onready var Asteroid_small = load("res://Asteroid/Asteroid_small.tscn")

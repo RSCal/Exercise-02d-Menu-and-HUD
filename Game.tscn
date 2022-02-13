@@ -12,8 +12,8 @@ __meta__ = {
 "_editor_description_": "The root of the scene"
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 589, 376 )
+[node name="Backgroud" type="Sprite" parent="."]
+position = Vector2( 600, 375 )
 texture = ExtResource( 3 )
 
 [node name="Player_Container" type="Node2D" parent="."]
@@ -26,6 +26,15 @@ position = Vector2( 100, 100 )
 
 [node name="Asteroid2" parent="Asteroid_Container" instance=ExtResource( 4 )]
 position = Vector2( 800, 500 )
+
+[node name="Asteroid3" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 16, 381 )
+
+[node name="Asteroid4" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 854, 210 )
+
+[node name="Asteroid5" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 295, 562 )
 
 [node name="Effects" type="Node2D" parent="."]
 
@@ -76,6 +85,9 @@ __meta__ = {
 margin_right = 1024.0
 margin_bottom = 600.0
 color = Color( 0, 0, 0, 0.25098 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="UI/Menu"]
 margin_right = 1024.0
@@ -83,6 +95,9 @@ margin_bottom = 400.0
 text = "Game Paused"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Restart" type="Button" parent="UI/Menu/Label"]
 margin_left = 462.0
